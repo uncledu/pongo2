@@ -1,3 +1,8 @@
+# Why fork
+
+Need to create custom tags using some internal props and funcs
+So i forked this repo to change the exposure of some internal struct.
+
 # [pongo](https://en.wikipedia.org/wiki/Pongo_%28genus%29)2
 
 [![PkgGoDev](https://pkg.go.dev/badge/github.com/flosch/pongo2)](https://pkg.go.dev/github.com/flosch/pongo2)
