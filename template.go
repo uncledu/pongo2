@@ -52,6 +52,40 @@ type Template struct {
 	Options *Options
 }
 
+func (t *Template) GetSet() *TemplateSet {
+	return t.set
+}
+func (t *Template) SetSet(nt *TemplateSet) {
+	if nt != nil {
+		t.set = nt
+	}
+}
+
+func (t *Template) GetParent() *Template {
+	return t.parent
+}
+func (t *Template) SetParent(nt *Template) {
+	if nt != nil {
+		t.parent = nt
+	}
+}
+
+func (t *Template) GetChild() *Template {
+	return t.child
+}
+func (t *Template) SetChild(nt *Template) {
+	if nt != nil {
+		t.child = nt
+	}
+}
+
+func (t *Template) GetLevel() int {
+	return t.level
+}
+func (t *Template) SetLevel(nt int) {
+	t.level = nt
+}
+
 func newTemplateString(set *TemplateSet, tpl []byte) (*Template, error) {
 	return newTemplate(set, "<string>", true, tpl)
 }

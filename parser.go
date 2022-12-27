@@ -37,6 +37,16 @@ type Parser struct {
 	template *Template
 }
 
+func (p *Parser) GetTemplate() *Template {
+	return p.template
+}
+
+func (p *Parser) SetTemplate(t *Template) {
+	if t != nil {
+		p.template = t
+	}
+}
+
 // Creates a new parser to parse tokens.
 // Used inside pongo2 to parse documents and to provide an easy-to-use
 // parser for tag authors
