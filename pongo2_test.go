@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/flosch/pongo2/v6"
+	"github.com/uncledu/pongo2/v6"
 	. "gopkg.in/check.v1"
 )
 
